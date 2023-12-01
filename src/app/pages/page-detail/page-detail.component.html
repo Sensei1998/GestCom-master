@@ -1,0 +1,84 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Details des articles</h1>
+            </div>
+            <div class="col-md-3 text-right">
+                      
+                <app-button-action
+                [isNouveauVisible]="false"
+                ></app-button-action>
+      
+            </div>
+            <!-- <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Blank Page</li>
+                </ol>
+            </div> -->
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+
+
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="container-fluid">
+        <div class="card">
+           
+
+            <div class="row">
+               
+                <div class="col m-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card mb-2">
+                         <div class="card-header" id="headingOne">
+                        <b>Details des articles</b>
+                         </div>
+                         <div class="card-body">
+                                <app-detail-detail></app-detail-detail>
+                             
+                         </div>
+                           
+                    </div>  
+                </div>
+            
+            
+              
+            
+        
+
+
+    
+     
+   </div>
+</div>
+
+  <!-- /.card-body -->
+  <div class="card-footer">
+    <div class="card-footer">
+        <div class="col-md-12 text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-danger mr-3" (click)="cancelClick()">
+                <i class="fas fa-ban"></i>&nbsp;
+                Annuler
+            </button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary" (click)="saveClick()">
+                <i class="fas fa-save"></i>
+                Enregistrer  
+            </button>
+        </div>
+      </div>
+  </div>
+  <!-- /.card-footer-->
+</div>
+</div>
+<!-- /.card -->
+</section>
+<!-- /.content -->

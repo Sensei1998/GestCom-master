@@ -1,0 +1,162 @@
+
+
+<div class=" col mb-1 mr-0 custom-border"*ngFor="let a of article">
+<div class=" row mb-1 mr-0 custom-border">
+   
+
+    <!--Details articles-->
+    <div class="col-md-5 custom-border-right mb-1 mt-1">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+                <div class="col-md-11"><b>Référence:</b> {{a.reference}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+                <div class="col-md-11"><b>Designation:</b> {{a.designation}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+                <div class="col-md-11"><b>Lot:</b> {{a.lot}}</div>
+            </div>
+        
+        </div>
+    </div>
+  <!--Details categories-->
+    <div class="col-md-3 border-right mb-1 mt-1">
+        <div class="row">
+            <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+            <div class="col-md-11"><b>Type:</b> {{a.typeArticle}}</div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-1"><i class="fas fa-flag-checkered blue-color"></i></div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-12"><b>Catégorie:</b> {{a.category}}</div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+        <div class="col-md-11"><b>Date d'expiration:</b> {{a.expiredDate}}</div>
+    </div>
+</div>
+
+    <!--bouton action-->
+    <div class="col-md-3 mb-1 mt-1">
+        <div class="row">
+           
+            <div class="col-md-4">
+                <button type="button" class="btn btn-link">
+                    <i class="fas fa-pencil-alt"></i> Modifier</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-link text-danger">
+                    <i class="fas fa-trash-alt"></i> Spprimer</button>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+<div class="col">
+    <div class=" row mb-1 mr-0 custom-border">
+        
+        <!--Details articles-->
+           
+    
+            <div class="col-md-3 custom-border-right mb-1 mt-1">
+                 <div class="row">
+                    <div class="col-md-12 text-center">
+                        <b>Conditionnement</b>
+                    </div>
+                 </div>
+            </div>
+    
+    <div class="col-md-2 custom-border-right mb-1 mt-1">
+        <div class="row">
+                <div class="col-md-12 text-center">
+                    <b>Remise</b>
+                </div>
+        </div>
+    </div>
+    
+        <div class="col-md-2 custom-border-right mb-1 mt-1">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                <b>Entrée</b>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-2 custom-border-right mb-1 mt-1">
+            <div class="col-md-12 text-center">
+            <b> Sortie</b>
+            </div>
+        </div>
+        <div class="col-md-3 custom-border-right mb-1 mt-1">
+            <div class="row text-center">   
+                <div class="col-md-11">
+                    <b>Prix de vente</b>
+                </div>
+            </div>     
+        </div>
+    </div>
+  
+  
+  
+  
+    <div class=" row mb-1 mr-0 custom-border">
+        
+        <!--Details articles-->
+            
+    
+            <div class="col-md-3 custom-border-right mb-1 mt-1">
+                 <div class="row">
+                    <div class="col-md-12 text-center">
+                     {{a.packaging}} 
+                    </div>
+                 </div>
+            </div>
+    
+    <div class="col-md-2 custom-border-right mb-1 mt-1">
+        <div class="row">
+                <div class="col-md-12 text-center">
+                  {{a.remise}} 
+                </div>
+        </div>
+    </div>
+    
+        <div class="col-md-2 custom-border-right mb-1 mt-1">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                  {{a.quantityIn}}
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-2 custom-border-right mb-1 mt-1">
+            <div class="col-md-12 text-center">
+              {{a.quantityOut}}
+            </div>
+        </div>
+        <div class="col-md-3 custom-border-right mb-1 mt-1">
+            <div class="row text-center">   
+                <div class="col-md-11"> {{a.oneSellPrice}}</div>
+            </div>     
+        </div>
+    </div>
+  
+   
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</div>
+
+

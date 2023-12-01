@@ -1,0 +1,95 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Nouveau client</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <!-- <li class="breadcrumb-item active">Blank Page</li> -->
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="container-fluid">
+        <div class="card">
+            
+
+<div class="col mb-3">
+    <div  class="col-md-12 mb-3 mt-3">
+        <img src="assets/img/profil.jpg" class="rounded-circle" width="200px" height="200px"/>
+    </div>
+    <hr>
+    <div class="col-md-12">
+        <div class="col-md-12 mb-3">
+            <h2><i class="fas fa-info-circle blue-color"></i>&nbsp; Information sur le client</h2>
+        </div>
+        <div class="col-md-12">
+            <form (ngSubmit)="saveClick()" [formGroup]="ClientForm">
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nom" formControlName="nom">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Prenom" formControlName="prenom">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Email" formControlName="email">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Téléphone" formControlName="numero">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Adresse" formControlName="adresse">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Ville" formControlName="ville">
+                    </div>
+                </div>
+               
+                <div class="row mb-3">
+                    
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Pays" formControlName="pays">
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <div class="col-md-12 " style="text-align: right">
+                        <button class="btn btn-danger mr-3" (click)="cancelClick()">
+                            <i class="fas fa-ban"></i>&nbsp;
+                            Annuler
+                        </button>&nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-save"></i>
+                            Enregistrer  
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+   
+</div>
+
+<!-- /.card-body -->
+
+<!-- /.card-footer-->
+</div>
+</div>
+<!-- /.card -->
+</section>
+<!-- /.content -->

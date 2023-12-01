@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+// @import '~bootstrap/scss/bootstrap';
+
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+@import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+@import 'ngx-toastr/toastr';
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.content {
+    padding: 0 0.5rem;
+}
+
+// Sidebar menu animation
+// Needed for open/close menu animation for menus with child nodes
+.nav .nav-item:not(.menu-open) > .ng-trigger-openClose,
+.nav .nav-item > .ng-trigger-openClose.ng-animating {
+    overflow: hidden;
+    display: block;
+}
+
+// Override original AdminLTE transform
+.nav-sidebar .menu-is-opening > .nav-link i.right,
+.nav-sidebar .menu-is-opening > .nav-link svg.right,
+.nav-sidebar .menu-open > .nav-link i.right,
+.nav-sidebar .menu-open > .nav-link svg.right {
+    transform: none;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #eff2f5 !important;
+}
+
+.backgroung-grey{
+    background-color: #eff2f5 !important;
+}
+
+.border-none{
+    border:none !important;
+}
+
+.min-height-80{
+    min-height: 80px;
+}
+ 
+.custom-border-right{
+    border-right: 2px solid #9ca1a6 !important;
+}
+
+.custom-border{
+    border: solid #9ca1a6;
+    border-radius: 5px;
+}
+.blue-color {
+    color: #037bfe; 
+}
+
+
+
+
+
+/* Style pour le contenu du modal */
+.modal-content {
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* Style pour le titre du modal */
+.modal-title {
+    font-weight: bold;
+}
+
+/* Style pour le bouton "Fermer" du modal */
+.close {
+    font-size: 30px;
+}
+
+/* Style pour les boutons du modal */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour le bouton "Annuler" */
+.btn-danger {
+    background-color: #dc3545; /* Couleur rouge */
+    color: white; /* Texte blanc */
+}
+
+/* Style pour le bouton "Enregistrer" */
+.btn-primary {
+    background-color: #007bff; /* Couleur bleue */
+    color: white; /* Texte blanc */
+}
+
+/* Style pour le formulaire à l'intérieur du modal */
+.modal-body form {
+    padding: 20px;
+}
+
+/* Style pour les étiquettes (labels) du formulaire */
+.col-form-label {
+    font-weight: bold;
+}
+
+/* Style pour le sélecteur (select) du formulaire */
+.form-control {
+    margin-top: 10px;
+}
+
+
+
+

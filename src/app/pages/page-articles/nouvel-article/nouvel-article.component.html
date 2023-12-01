@@ -1,0 +1,122 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Articles</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <!-- <li class="breadcrumb-item active">Blank Page</li> -->
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="container-fluid">
+        <div class="card">
+           
+
+
+            <div class="card-body">
+                
+                    <div  class="col-md-12 mb-3">
+                        <img src="assets/img/image1.jpg" class="rounded-circle" width="200px" height="200px"/>
+                    </div>
+                    <hr>
+                    <div class="col-md-12">
+                        <div class="col-md-12 mb-3">
+                            <h2><i class="fas fa-info-circle blue-color"></i>&nbsp; Information de l'article</h2>
+                        </div>
+                        <div class="col-md-12">
+                            <form  (ngSubmit)="saveClick()" [formGroup]="ArticleForm">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Référence" formControlName="reference">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Designation" formControlName="designation">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Lot" formControlName="lot">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Type" formControlName="typeArticle">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Date d'expiration" formControlName="expiredDate">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Catégorie" formControlName="category">
+                                        <!-- <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Selectionner une catégorie</option>
+                                        <option>REACTIF LABO/BACT</option>
+                                        <option>CONSOMMABLE LABO</option>
+                                        <option>MATERIEL DE LABO</option>
+                                        <option>TDR</option>
+                                        <option>REACTIFS</option>
+                                        <option>MATERIEL MEDICAL</option>
+                                        <option>APPAREIL LABORATOIRE</option>
+                                        
+                                        </select>   -->
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Conditionnement" formControlName="packaging">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Remise" formControlName="remise">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Entrée" formControlName="quantityIn">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Sortie" formControlName="quantityOut">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Prix de vente" formControlName="oneSellPrice">
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-12 text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button class="btn btn-danger mr-3" (click)="cancelClick()">
+                                        <i class="fas fa-ban"></i>&nbsp;
+                                        Annuler
+                                    </button>&nbsp;&nbsp;&nbsp;
+                                    <button class="btn btn-primary" type="submit"> 
+                                        <i class="fas fa-save"></i>
+                                        Enregistrer  
+                                    </button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                   
+                
+            </div>
+
+
+           
+        </div>
+    </div>
+    <!-- /.card -->
+</section>
+<!-- /.content -->

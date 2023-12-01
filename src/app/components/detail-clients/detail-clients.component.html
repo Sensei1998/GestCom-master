@@ -1,0 +1,61 @@
+
+
+<div class=" row mb-1 mr-0 custom-border"*ngFor="let a of client">
+    <div class="col-md-1 border-right p-1 text-center mb-1 mt-1">
+            <img src ="assets/img/profil.jpg" width="100px" height="100px">
+    </div>
+
+    <!--Details articles-->
+    <div class="col-md-4 custom-border-right mb-1 mt-1">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+                <div class="col-md-11"> <b>Nom:</b> {{a.nom}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+                <div class="col-md-11"><b>Prenom:</b> {{a.prenom}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-phone-alt blue-color"></i></div>
+                <div class="col-md-11"><b>Téléphone:</b> {{a.numero}}</div>
+            </div>
+        </div>
+    </div>
+  <!--Details categories-->
+    <div class="col-md-3 border-right mb-1 mt-1">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-home blue-color"></i></div>
+                <div class="col-md-10"><b>Adresse:</b> {{a.adresse}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-map-marker-alt blue-color"></i></div>
+                <div class="col-md-10"><b>Ville:</b> {{a.ville}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-globe-europe blue-color"></i></div>
+                <div class="col-md-10"><b>Pays:</b> {{a.pays}}</div>
+            </div>
+        </div>
+</div>
+
+    <!--bouton action-->
+    <div class="col-md-3 mb-1 mt-1">
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-link text-success" [routerLink]="['/proFacture',a.id]">
+                    <i class="fas fa-list-alt"></i> &nbsp; Facturation</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-link">
+                    <i class="fas fa-pencil-alt"></i> &nbsp;  Modifier</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-link text-danger">
+                    <i class="fas fa-trash-alt"></i> &nbsp; Spprimer</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
